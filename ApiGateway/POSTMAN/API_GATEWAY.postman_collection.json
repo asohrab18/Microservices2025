@@ -1,0 +1,349 @@
+{
+	"info": {
+		"_postman_id": "5a8cc7b2-c886-46f0-aae7-acd2c3435e8d",
+		"name": "API_GATEWAY",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4764387"
+	},
+	"item": [
+		{
+			"name": "weight-management-service/weight-management/details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"TOM\",\r\n    \"caloriesLossPerDay\": 700,\r\n    \"currentWeightInKg\": 123,\r\n    \"desiredWeightInKg\": 85\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8765/weight-management-service/weight-management/details",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"weight-management-service",
+						"weight-management",
+						"details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "weight-management-service/weight-management/messages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/weight-management-service/weight-management/messages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"weight-management-service",
+						"weight-management",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "weight-management-service/weight-management/greetings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/weight-management-service/weight-management/greetings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"weight-management-service",
+						"weight-management",
+						"greetings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "students-management-service/students/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/students-management-service/students/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"students-management-service",
+						"students",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "students-management-service/students/name/bob",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/students-management-service/students/name/bob",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"students-management-service",
+						"students",
+						"name",
+						"bob"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "students-management-service/students/id/18",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/students-management-service/students/id/18",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"students-management-service",
+						"students",
+						"id",
+						"18"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employees-management-service/employees/v1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/employees-management-service/employees/v1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"employees-management-service",
+						"employees",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employees-management-service/employees/v2?sortBy=name&sortType=desc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/employees-management-service/employees/v2?sortBy=name&sortType=desc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"employees-management-service",
+						"employees",
+						"v2"
+					],
+					"query": [
+						{
+							"key": "sortBy",
+							"value": "name"
+						},
+						{
+							"key": "sortType",
+							"value": "desc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employees-management-service/employees/v3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/employees-management-service/employees/v3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"employees-management-service",
+						"employees",
+						"v3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "catalogs-info-service/catalogs/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/catalogs-info-service/catalogs/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"catalogs-info-service",
+						"catalogs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "catalogs-info-service/catalogs/userId/alams1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/catalogs-info-service/catalogs/userId/alams1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"catalogs-info-service",
+						"catalogs",
+						"userId",
+						"alams1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movies-info-service/movies/v2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/movies-info-service/movies/v2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"movies-info-service",
+						"movies",
+						"v2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ratings-info-service/ratings/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/ratings-info-service/ratings/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"ratings-info-service",
+						"ratings",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "feign-service/feign/factorial/6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/feign-service/feign/factorial/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"feign-service",
+						"feign",
+						"factorial",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "calculator-service/calculator/factorial/6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/calculator-service/calculator/factorial/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"calculator-service",
+						"calculator",
+						"factorial",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

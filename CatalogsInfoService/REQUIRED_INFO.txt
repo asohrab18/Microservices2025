@@ -1,0 +1,12 @@
+GET:
+http://localhost:7003/catalogs/userId/alams1
+http://localhost:7003/catalogs/
+____________________________________________________________________________
+
+Actuator GET URL:
+http://localhost:7003/actuator
+____________________________________________________________________________
+
+Swagger Document GET URL:
+http://localhost:7003/swagger-ui.html
+____________________________________________________________________________

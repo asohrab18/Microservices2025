@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "50a7ce18-bd46-41b0-9c5f-19601f70f35f",
+		"name": "CATALOGS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4764387"
+	},
+	"item": [
+		{
+			"name": "CATALOGS BY USER_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7003/catalogs/userId/alams1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7003",
+					"path": [
+						"catalogs",
+						"userId",
+						"alams1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CATALOGS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7003/catalogs/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7003",
+					"path": [
+						"catalogs",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Custom Script -->
+  <script src="/js/calculator.js"></script>
+
+  <style>
+    /* Small hover style for button */
+    button:hover {
+      transform: scale(1.02);
+      transition: 0.2s ease-in-out;
+    }
+  </style>
+</head>
+<body class="p-4 bg-light">
+
+  <div class="container">
+
+    <!-- Home Button -->
+    <div class="d-flex justify-content-end mb-3">
+      <a href="/index.html" class="btn btn-outline-secondary">⬅️ Home</a>
+    </div>
+
+    <!-- Calculator Card -->
+    <div class="bg-white p-4 rounded shadow">
+
+      <!-- Title -->
+      <h2 class="mb-4 text-primary">Calculator</h2>
+
+      <!-- Factorial Form -->
+      <form id="factorialForm" onsubmit="submitFactorialForm(event)">
+        <div class="row g-3">
+          <div class="col-md-3">
+            <input 
+              type="number" 
+              id="number" 
+              class="form-control" 
+              placeholder="Enter a Number" 
+              min="0" 
+              oninput="this.value = this.value.replace(/-/g, '')" 
+              required 
+            />
+          </div>
+        </div>
+        <div class="mt-4">
+          <button class="btn btn-success" type="submit">Get Factorial</button>
+        </div>
+      </form>
+
+      <!-- Result Section -->
+      <div id="resultContainer" class="mt-5"></div>
+
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

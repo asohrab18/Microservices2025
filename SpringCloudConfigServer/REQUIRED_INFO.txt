@@ -1,0 +1,3 @@
+http://localhost:8888/Config_Client_Service/default
+http://localhost:8888/Config_Client_Service/uat
+http://localhost:8888/Config_Client_Service/prod

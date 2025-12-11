@@ -1,0 +1,14 @@
+GET URLs:
+
+http://localhost:9001/persons/greetings
+
+http://localhost:9001/persons/greetings?num=1
+
+http://localhost:9001/persons/
+
+http://localhost:9001/persons/id/1
+
+____________________________________________________________________________
+
+Swagger Document GET URL:
+http://localhost:9001/swagger-ui.html

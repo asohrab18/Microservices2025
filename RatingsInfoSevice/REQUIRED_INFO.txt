@@ -1,0 +1,45 @@
+POST:
+http://localhost:7002/ratings/
+Body o raw (JSON):
+{
+	"userId": "alams1",
+    "movieId": "kkhh",
+    "rating": 3.5
+}
+____________________________________________________________________________
+
+GET:
+http://localhost:7002/ratings/
+
+GET:
+http://localhost:7002/ratings/userId/james1
+____________________________________________________________________________
+
+Actuator GET URL:
+http://localhost:7002/actuator
+____________________________________________________________________________
+
+Swagger Document GET URL:
+http://localhost:7002/swagger-ui.html
+____________________________________________________________________________
+
+Some queries to insert data: (Suppose MYSQL databse is `testrating-dev`)
+--------------------------------------------------------------------------
+
+INSERT INTO `testrating-dev`.`rating`(`movie_id`,`rating`,`user_id`)VALUES('kkhh',3.5,'alams1');
+INSERT INTO `testrating-dev`.`rating`(`movie_id`,`rating`,`user_id`)VALUES('dil',4.0,'alams1');
+INSERT INTO `testrating-dev`.`rating`(`movie_id`,`rating`,`user_id`)VALUES('don',4.5,'fredy2');
+INSERT INTO `testrating-dev`.`rating`(`movie_id`,`rating`,`user_id`)VALUES('koyla',3.9,'fredy2');
+INSERT INTO `testrating-dev`.`rating`(`movie_id`,`rating`,`user_id`)VALUES('titanic',4.9,'james1');
+INSERT INTO `testrating-dev`.`rating`(`movie_id`,`rating`,`user_id`)VALUES('mi',2.5,'james1');
+INSERT INTO `testrating-dev`.`rating`(`movie_id`,`rating`,`user_id`)VALUES('rrr',5.0,'paul123');
+
+
+
+
+
+
+
+
+
+

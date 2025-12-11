@@ -1,0 +1,12 @@
+GET URL:
+
+http://localhost:9002/consumers/greetings
+
+http://localhost:9002/consumers/persons
+
+http://localhost:9002/consumers/persons/id/1
+
+____________________________________________________________________________
+
+Swagger Document GET URL:
+http://localhost:9002/swagger-ui.html

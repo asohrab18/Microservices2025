@@ -1,0 +1,73 @@
+GET:
+http://localhost:8003/employees/v1
+Optional Body o raw (JSON):
+{
+    "name": "Ali",
+    "salary": 30000,
+    "city": "Meerut",
+    "state": "U.P.",
+    "country": "India"
+}
+____________________________________________________________________________
+
+GET:
+http://localhost:8003/employees/v2?sortBy=name&sortType=desc
+Optional parameters: sortBy, sortType
+Optional Body o raw (JSON):
+{
+    "name": "Ali",
+    "salary": 30000,
+    "city": "Meerut",
+    "state": "U.P.",
+    "country": "India"
+}
+____________________________________________________________________________
+
+GET:
+http://localhost:8003/employees/v3
+Optional Body o raw (JSON):
+{
+    "name": "Ali",
+    "salary": 30000,
+    "city": "Meerut",
+    "state": "U.P.",
+    "country": "India"
+}
+____________________________________________________________________________
+
+DELETE ALL:
+http://localhost:8003/employees/
+____________________________________________________________________________
+
+POST:
+http://localhost:8003/employees
+Body o raw (JSON):
+{
+    "name": "Ali",
+    "salary": 30000,
+    "city": "Meerut",
+    "state": "U.P.",
+    "country": "India"
+}
+____________________________________________________________________________
+
+PUT:
+http://localhost:8003/employees
+Body o raw (JSON):
+{
+    "id": "1",
+    "name": "Ali",
+    "salary": 30000,
+    "city": "Meerut",
+    "state": "U.P.",
+    "country": "India"
+}
+____________________________________________________________________________
+
+Actuator GET URL:
+http://localhost:8003/actuator
+____________________________________________________________________________
+
+Swagger Document GET URL:
+http://localhost:8003/swagger-ui.html
+____________________________________________________________________________

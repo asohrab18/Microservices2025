@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "0247f301-ab8b-4996-bf4d-f17e12dc069d",
+		"name": "WEIGHT_MGMT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4764387"
+	},
+	"item": [
+		{
+			"name": "messages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8001/weight-management/messages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"weight-management",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "greetings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8001/weight-management/greetings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"weight-management",
+						"greetings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"TOM\",\r\n    \"caloriesLossPerDay\": 700,\r\n    \"currentWeightInKg\": 123,\r\n    \"desiredWeightInKg\": 85\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8001/weight-management/details",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"weight-management",
+						"details"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

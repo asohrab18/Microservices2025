@@ -1,0 +1,10 @@
+GET URLs:
+
+http://localhost:9004/products/
+
+http://localhost:9004/products/id/1
+
+____________________________________________________________________________
+
+Swagger Document GET URL:
+http://localhost:9004/swagger-ui.html

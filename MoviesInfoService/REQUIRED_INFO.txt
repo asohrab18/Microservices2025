@@ -1,0 +1,61 @@
+POST:
+http://localhost:7001/movies/
+Body o raw (JSON):
+{
+	"movieId": "kkhh",
+    "name": "Kuch Kuch Hota Hei",
+    "description": "Actors were Shahrukh Khan, Kajol and Rani Mukherji."
+}
+____________________________________________________________________________
+
+PUT:
+http://localhost:7001/movies/
+Body o raw (JSON):
+{
+    "id": 1,
+    "movieId": "koyla",
+    "name": "Koyla",
+    "description": "Actors were Shahrukh Khan and Madhuri Dixit."
+}
+____________________________________________________________________________
+
+GET:
+http://localhost:7001/movies/
+http://localhost:7001/movies/movieId/dil
+____________________________________________________________________________
+
+DELETE:
+http://localhost:7001/movies/id/1
+____________________________________________________________________________
+
+Actuator GET URL:
+http://localhost:7001/actuator
+____________________________________________________________________________
+
+Swagger Document GET URL:
+http://localhost:7001/swagger-ui.html
+____________________________________________________________________________
+
+Some queries to insert data: (Suppose MYSQL databse is `testmovie-dev`)
+--------------------------------------------------------------------------
+
+INSERT INTO `testmovie-dev`.`movie` (`description`,`movie_id`,`name`) 
+VALUES('Actors were Shahrukh Khan and Madhuri Dixit.','koyla','Koyla');
+ 
+INSERT INTO `testmovie-dev`.`movie` (`description`,`movie_id`,`name`) 
+VALUES('Actors were Shahrukh Khan and Priyanka Chpra.','don','Don');
+ 
+INSERT INTO `testmovie-dev`.`movie` (`description`,`movie_id`,`name`) 
+VALUES('Actors were Aamir Khan and Madhuri Dixit.','dil','Dil');
+ 
+INSERT INTO `testmovie-dev`.`movie` (`description`,`movie_id`,`name`) 
+VALUES('Actors were Shahrukh Khan, Kajol and Rani Mukherji.','kkhh','Kuch Kuch Hota Hai');
+ 
+INSERT INTO `testmovie-dev`.`movie` (`description`,`movie_id`,`name`) 
+VALUES('Tom Cruise played an important role.','mi','Mission Impossible');
+ 
+INSERT INTO `testmovie-dev`.`movie` (`description`,`movie_id`,`name`) 
+VALUES('Block Buster Movie directed by Raja Moylee.','rrr','RRR');
+ 
+INSERT INTO `testmovie-dev`.`movie` (`description`,`movie_id`,`name`) 
+VALUES('A huge ship was drown into the sea.','titanic','Titanic');

@@ -1,0 +1,10 @@
+GET URLs:
+
+http://localhost:9003/candidates/
+
+http://localhost:9003/candidates/id/1
+
+____________________________________________________________________________
+
+Swagger Document GET URL:
+http://localhost:9003/swagger-ui.html
