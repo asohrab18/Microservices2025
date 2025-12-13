@@ -63,7 +63,7 @@ public class EmployeesManagementController {
 	}
 
 	@DeleteMapping(EmployeesManagementContants.URL_ID_PATH)
-	public ResponseEntity<String> deleteStudent(@PathVariable int id) throws Exception {
+	public ResponseEntity<String> deleteEmployee(@PathVariable int id) throws Exception {
 		String deleteMessage = service.deleteEmployee(id);
 		return new ResponseEntity<>(deleteMessage, HttpStatus.OK);
 	}
